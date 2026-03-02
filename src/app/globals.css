@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+:root {
+  /* Warm editorial palette */
+  --paper: 246 241 231; /* #f6f1e7 */
+  --ink: 31 33 36; /* near-charcoal */
+  --muted: 93 98 103; /* softened gray */
+  --accent: 75 93 129; /* muted indigo */
+  --accent-2: 92 111 88; /* muted olive */
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  background: rgb(var(--paper));
+  color: rgb(var(--ink));
+}
+
+::selection {
+  background: rgb(var(--accent) / 0.18);
+}
+
+a {
+  color: rgb(var(--accent));
+}
